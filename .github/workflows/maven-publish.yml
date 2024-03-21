@@ -3,7 +3,9 @@ name: CI/CD Pipeline
 on:
   release:
     types: [created]
-
+  push:
+    branches:
+      - main
 jobs:
   build:
 
